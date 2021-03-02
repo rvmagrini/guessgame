@@ -5,30 +5,37 @@
 const inputguess = document.querySelector(".guess");
 const palert = document.querySelector(".palert");
 
-let score, highscore, playing;
+const number = Math.floor(Math.random() * 20) + 1;
+console.log(number);
+let score = 20;
+let highscore = 0;
 
-// NEW GAME
-const initial = () => {
-  score = 0;
-  highscore = 0;
-  playing = true;
+// CLEAN INPUT FIELD
+const cleanInput = () => {
+  inputguess.value = "";
+  inputguess.focus();
 };
-initial();
 
 // GUESSING
 const startGuess = () => {
-  if (playing) {
-    const number = Math.floor(Math.random() * 20) + 1;
-    let guess = Number(inputguess.value);
-    console.log(guess);
+  let guess = Number(inputguess.value);
+  console.log(guess);
 
-    if (guess > 0 && guess <= 20) {
-      console.log("good to go");
+  if (guess > 0 && guess <= 20) {
+    console.log("good to go");
+    if (guess < number) {
+      palert.textContent = "TOO LOW...";
+      cleanInput();
+    } else if (guess > number) {
+      palert.textContent = "TOO HIGH...";
+      cleanInput();
     } else {
-      inputguess.value = "";
-      inputguess.focus();
-      return;
+      palert.textContent = "YOU GUESSED";
     }
+  } else {
+    palert.textContent = "GUESS A NUMBER BETWEEN 1 AND 20";
+
+    return;
   }
 };
 

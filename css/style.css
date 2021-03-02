@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  padding: 50px;
+  height: 100vh;
+  background-color: #534e52;
+  color: #e8e8e8;
+}
+
+.win {
+  background-color: #59886b;
+}

@@ -55,10 +55,10 @@ header {
 }
 
 .inputdiv {
-  float: left;
   position: absolute;
-  top: 22rem;
-  left: 20rem;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 input {
@@ -73,22 +73,23 @@ input {
 .status {
   text-align: left;
   position: absolute;
-  top: 25rem;
-  left: 90rem;
+  top: 50%;
+  left: 75%;
+  transform: translateY(-50%) translateX(-50%);
   font-size: 2rem;
 }
 
-.alertp {
+.palert {
   color: #aa3a3a;
-  margin: 15px;
+  margin: 20px;
 }
 
-.scorep {
-  margin: 15px;
+.pscore {
+  margin: 20px;
 }
 
-.highscorep {
-  margin: 15px;
+.phighscore {
+  margin: 20px;
 }
 
 .win {

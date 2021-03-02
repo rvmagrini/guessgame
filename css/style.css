@@ -27,10 +27,25 @@ header {
   padding: 50px;
 }
 
+input {
+  background-color: #e8e8e8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 5px solid black;
+}
+
 .main {
   background-color: #e8e8e8;
   border-radius: 2px;
-  height: 60%;
+  height: 70%;
+}
+
+.newgamebtn {
+  width: 180px;
+  height: 60px;
 }
 
 .guess {
@@ -40,7 +55,7 @@ header {
 
 .middlebox {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: max-content;
@@ -53,24 +68,15 @@ header {
 
 .inputdiv {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 25%;
   transform: translateY(-50%) translateX(-50%);
-}
-
-input {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 5px solid black;
 }
 
 .status {
   text-align: left;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 75%;
   transform: translateY(-50%) translateX(-50%);
   font-size: 2rem;
@@ -87,7 +93,7 @@ input {
 
 .alertdiv {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   line-height: 1.5;

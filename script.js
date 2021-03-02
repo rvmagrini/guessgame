@@ -32,7 +32,7 @@ const newGame = () => {
   txtMidField.textContent = "?";
   cleanInput();
 };
-1;
+document.querySelector(".newgamebtn").addEventListener("click", newGame);
 
 // GUESSING
 const startGuess = () => {
@@ -69,12 +69,9 @@ const startGuess = () => {
     } else {
       palert.textContent = "GUESS A NUMBER BETWEEN 1 AND 20";
       cleanInput();
-
       return;
     }
   }
 };
 
 document.querySelector(".guessbtn").addEventListener("click", startGuess);
-
-document.querySelector(".newgamebtn").addEventListener("click", newGame);

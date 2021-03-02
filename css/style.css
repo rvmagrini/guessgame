@@ -48,6 +48,7 @@ header {
   font-size: 12rem;
   background-color: black;
   color: #e8e8e8;
+  border-radius: 5px;
 }
 
 .icon {
@@ -67,7 +68,7 @@ input {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 5px solid black;
 }
 
 .status {

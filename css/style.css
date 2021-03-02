@@ -29,7 +29,25 @@ header {
 
 .main {
   background-color: #e8e8e8;
-  border-radius: 5px;
+  border-radius: 2px;
+  height: 60%;
+}
+
+.guess {
+  width: 100px;
+  height: 100px;
+}
+
+.middlebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: max-content;
+  padding: 20px;
+  font-size: 12rem;
+  background-color: black;
+  color: #e8e8e8;
 }
 
 .icon {
@@ -38,12 +56,39 @@ header {
 
 .inputdiv {
   float: left;
+  position: absolute;
+  top: 22rem;
+  left: 20rem;
 }
 
 input {
   font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
   padding: 10px;
+  margin: 10px;
   border-radius: 5px;
+  border: 2px solid black;
+}
+
+.status {
+  text-align: left;
+  position: absolute;
+  top: 25rem;
+  left: 90rem;
+  font-size: 2rem;
+}
+
+.alertp {
+  color: #aa3a3a;
+  margin: 15px;
+}
+
+.scorep {
+  margin: 15px;
+}
+
+.highscorep {
+  margin: 15px;
 }
 
 .win {

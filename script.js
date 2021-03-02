@@ -10,7 +10,6 @@ const txtMidField = document.querySelector(".txtmidfield");
 
 // INITAL CONDITIONS
 let number = Math.floor(Math.random() * 20) + 1;
-console.log(number);
 let score = 20;
 let highscore = 0;
 let playing = true;
@@ -39,10 +38,8 @@ const newGame = () => {
 const startGuess = () => {
   if (playing) {
     let guess = Number(inputguess.value);
-    console.log(guess);
 
     if (guess > 0 && guess <= 20) {
-      console.log("good to go");
       score -= 1;
       txtScore.textContent = score;
 

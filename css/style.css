@@ -9,12 +9,41 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
 body {
   font-family: "Press Start 2P", cursive;
-  padding: 50px;
+  padding: 0 80px;
   height: 100vh;
-  background-color: #534e52;
+  background-color: black;
+  color: black;
+  text-align: center;
+}
+
+header {
   color: #e8e8e8;
+  padding: 50px;
+}
+
+.main {
+  background-color: #e8e8e8;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 200px;
+}
+
+.inputdiv {
+  float: left;
+}
+
+input {
+  font-family: "Press Start 2P", cursive;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .win {

@@ -34,7 +34,7 @@ header {
 }
 
 .guess {
-  width: 100px;
+  width: 130px;
   height: 100px;
 }
 
@@ -49,10 +49,6 @@ header {
   background-color: black;
   color: #e8e8e8;
   border-radius: 5px;
-}
-
-.icon {
-  width: 200px;
 }
 
 .inputdiv {
@@ -78,11 +74,7 @@ input {
   left: 75%;
   transform: translateY(-50%) translateX(-50%);
   font-size: 2rem;
-}
-
-.palert {
-  color: #aa3a3a;
-  margin: 20px;
+  line-height: 1.5;
 }
 
 .pscore {
@@ -91,6 +83,16 @@ input {
 
 .phighscore {
   margin: 20px;
+}
+
+.alertdiv {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #aa3a3a;
 }
 
 .win {
